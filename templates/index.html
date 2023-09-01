@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../static/index.css">
+    <script src="../static/index.js"></script>
+    <style>
+        .btn {
+            background-color: rgb(204, 216, 216);
+            padding: 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            text-decoration: none;
+
+            align-items: center;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    {% include 'navbar.html' %}
+    <main>
+        <!-- HOME SECTION -->
+        <section class="container section-1" style="background-color: rgb(29, 29, 44);">
+            <div class="slogan">
+                <h1 class="company-title">Instant Money</h1>
+                <h2 class="company-slogan text-light">
+                    A website where Lendors loans money at an interest and creditors
+                    takes loans.
+                </h2>
+                <br>
+                <a href="/save_vendor" class="btn ">Lender</a>
+                <a href="/getproducts" class="btn ">Creditor</a>
+            </div>
+            <div class="home-computer-container">
+                <img class="home-computer" src="../static/images/image.jpeg" 
+                    class="home-img">
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

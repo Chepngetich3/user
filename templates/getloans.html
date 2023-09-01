@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor products</title>
+    <link rel="stylesheet" href="../static/css/lendorloans.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <br><br>
+    <h3 style="text-align:center;color: blue;background-color:aquamarine">Auto category</h3>
+    <main class="page-content">
+
+        {% for record in Auto %}
+        <div class="card shadow me-2"
+            style="background-image:url(../static/images/{{record[8]}}); background-repeat: no-repeat;background-size: cover;align-items:center;">
+            <div class="content">
+                <h2 class="title">{{record[2]}}</h2>
+                <p class="copy">{{record[3]}}</p>
+                <p class="copy"><span style=color:blue>Cost</span>{{record[4]}}</p>
+                <p class="copy"><span style=color:rgb(229,61,209)>interest</span>{{record[5]}}</p>
+                <!-- <button class="btn">Book Now</button> -->
+                <a class="btn" style="text-decoration: none;background-color: rgb(236, 173, 173);"
+                    href="/single_item/{{record[0]}}">Apply Loan</a>
+            </div>
+        </div>
+        {% endfor%}
+    </main>
+    <!-- grade 1 category -->
+    <br><br>
+    <h3 style="text-align:center;color: blue;background-color:aquamarine">Mortgage category</h3>
+    <main class="page-content">
+
+        {% for record in Mortgage %}
+        <div class="card shadow me-2"
+            style="background-image:url(../static/images/{{record[8]}}); background-repeat: no-repeat;background-size: cover;align-items:center;">
+            <div class="content">
+                <h2 class="title">{{record[2]}}</h2>
+                <p class="copy">{{record[3]}}</p>
+                <p class="copy"><span style=color:blue>Cost</span>{{record[4]}}</p>
+                <p class="copy"><span style=color:rgb(229,61,209)>interest</span>{{record[5]}}</p>
+                <!-- <button class="btn">Book Now</button> -->
+                <a class="btn" style="text-decoration: none;background-color: rgb(236, 173, 173);"
+                    href="/single_item/{{record[0]}}">Apply Loan</a>>
+            </div>
+        </div>
+        {% endfor%}
+    </main>
+    <br><br>
+    <h3 style="text-align:center;color: blue;background-color:aquamarine">Personal category</h3>
+    <main class="page-content">
+
+        {% for record in Personal%}
+        <div class="card shadow me-2"
+            style="background-image:url(../static/images/{{record[8]}}); background-repeat: no-repeat;background-size: cover;align-items:center;">
+            <div class="content">
+                <h2 class="title">{{record[2]}}</h2>
+                <p class="copy">{{record[3]}}</p>
+                <p class="copy"><span style=color:blue>Cost</span>{{record[4]}}</p>
+                <p class="copy"><span style=color:rgb(229,61,209)>interest</span>{{record[5]}}</p>
+                <!-- <button class="btn">Book Now</button> -->
+                <a class="btn" style="text-decoration: none;background-color: rgb(236, 173, 173);"
+                    href="/single_item/{{record[0]}}">Apply Loan</a>
+            </div>
+        </div>
+        {% endfor%}
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+Gender,Married,Education,Self_Employed,Applicant_Income,Loan_Amount,Loan_Status
+Male,No,Not Graduate,No,5849,,Get A Loan
+Male,No,Not Graduate,No,4583,128,Does Not Get A Loan
+Male,No,Not Graduate,Yes,3000,66,Get A Loan
+Male,Yes,Not Graduate,No,2583,120,Get A Loan
+Male,No,Not Graduate,No,6000,141,Get A Loan
+Male,No,Not Graduate,Yes,5417,267,Get A Loan
+Male,Yes,Not Graduate,No,2333,95,Get A Loan
+Male,No,Not Graduate,No,3036,158,Does Not Get A Loan
+Male,No,Not Graduate,No,4006,168,Get A Loan
+Male,Yes,Not Graduate,No,2841,349,Does Not Get A Loan
+Male,Yes,Graduate,No,3200,70,Get A Loan
+Male,Yes,Graduate,,9546,109,Get A Loan
+Male,No,Graduate,No,9547,200,Get A Loan
+Male,Yes,Graduate,No,9548,114,Does Not Get A Loan
+Male,No,Graduate,No,9549,17,Get A Loan
+Male,Yes,Graduate,No,9550,125,Get A Loan
+Male,No,Graduate,No,6995,100,Get A Loan
+Male,Yes,Graduate,No,6996,76,Does Not Get A Loan
+Male,Yes,Graduate,No,6997,133,Does Not Get A Loan
+Female,No,Graduate,,6998,115,Get A Loan
+Female,No,Graduate,No,6999,104,Does Not Get A Loan
+Female,Yes,Graduate,No,7000,315,Get A Loan
+Female,Yes,Graduate,No,9557,116,Does Not Get A Loan
+Female,Yes,Graduate,No,9558,112,Does Not Get A Loan
+Female,No,Graduate,,9559,151,Does Not Get A Loan
+Female,No,Graduate,Yes,9560,191,Get A Loan
+Female,Yes,Not Graduate,No,2799,122,Get A Loan
+Female,Yes,Not Graduate,No,4226,110,Get A Loan
+Female,Yes,Not Graduate,No,1442,35,Does Not Get A Loan
+Female,Yes,Not Graduate,,3750,120,Get A Loan
+Female,No,Not Graduate,,4166,201,Does Not Get A Loan
+Female,No,Not Graduate,No,3167,74,Does Not Get A Loan
+Female,Yes,Graduate,Yes,4692,106,Does Not Get A Loan
+Female,No,Graduate,No,4998,114,Get A Loan
+Female,No,Graduate,No,4999,320,Does Not Get A Loan
+Female,No,Graduate,No,5000,,Get A Loan
+Female,No,Not Graduate,No,1828,100,Does Not Get A Loan
+Female,No,Not Graduate,No,3667,144,Get A Loan
+Female,No,Not Graduate,No,4166,184,Get A Loan

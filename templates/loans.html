@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loans</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+
+</head>
+
+<body>
+    <h2 class="text-secondary">Fill in the following data to predict</h2>
+    <div class="container">
+        <div class="card shadow mx-auto" style="width: 350px;">
+            <h4>Loan Status: <span>{{outcome}}</span></h4>
+            <form action="/pima_indians" method="post" class="p-3">
+                <input type="text" class="form-control mt-2" placeholder="Enter Gender" name="Gender">
+                <input type="text" class="form-control mt-2" placeholder="Enter Marital status" name="married">
+                <input type="text" class="form-control mt-2" placeholder="Enter if graduate or not" name="Education">
+                <input type="text" class="form-control mt-2" placeholder="Enter if self employed or not" name="Gender">
+                <input type="number" class="form-control mt-2" placeholder="Enter applicant income" name="Income">
+                <input type="number" class="form-control mt-2" placeholder="Enter Loan amount" name="Loan_amount">
+                <button type="submit" class="btn btn-success mt-2">Submit Data</button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

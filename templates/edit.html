@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Registration</h1>
+        <h2 style="color:red">{{message}}</h2>
+        <form action="/edit/value={{record[0]}}" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="{{record[0]}}"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="{{record[1]}}"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" value="{{record[2]}}"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" value="{{record[3]}}"><br><br>
+            <label for="phone">Gender:</label>
+            <input type="radio" id="male" name="gender" value="{{record[4]}}"><label for="male">male</label>
+            <input type="radio" id="female"name="gender" value="{{record[4]}}"><label for="female">female</label><br><br>
+            <label for="phone">Education:</label>
+            <input type="radio" id="male" name="gender" value="{{record[4]}}"><label for="male">Graduate</label>
+            <input type="radio" id="female" name="gender" value="{{record[4]}}"><label for="female">Not Graduate</label><br><br>
+            <label for="phone">Self employed:</label>
+            <input type="radio" id="selfemployed" name="selfemployed" value="{{record[4]}}"><label for="male">yes</label>
+            <input type="radio" id="selfemployed" name="selfemployed" value="{{record[4]}}"><label for="female">No</label><br><br>
+            <label for="phone">Married:</label>
+            <input type="radio" id="male" name="gender" value="{{record[4]}}"><label for="male">Yes</label>
+            <input type="radio" id="female" name="gender" value="{{record[4]}}"><label for="female">No</label><br><br>
+            <label for="income">Income:</label>
+            <input type="int" id="applicant_income" name="phone" value="{{record[3]}}"><br><br>
+            <label for="Loan_amount">Loan amount:</label>
+            <input type="int" id="Loan_amount" name="Loan" value="{{record[3]}}"><br><br>
+
+
+
+
+
+
+            <input type="submit" value="save">
+        </form>
+    </div>
+</body>
+
+</html>

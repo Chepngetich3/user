@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../static/index.css">
+    <script src="../static/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="company-logo">D</div>
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Lend</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Apply Loan</a></li>
+                {% if session['user']%}
+                <i style="color: rgb(0, 255, 242);font-size: 25px;">{{session['user']}}</i>
+                <li class="nav-item"><a href="/logout/user" class="nav-link">Logout</a></li>
+                <li class="nav-item"><a href="/edit/{{session['user']}}" class="nav-link">Edit</a></li>
+
+                {% else %}
+                <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="/register" class="nav-link">Signup</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="bx bx-menu"></i>
+            <i class="bx bx-x"></i>
+        </div>
+    </header>
+</body>
+
+</html>

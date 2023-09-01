@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor products</title>
+    <link rel="stylesheet" href="../static/css/vendorproducts.css">
+</head>
+
+<body>
+    <main class="page-content">
+        {% for record in data %}
+        <div class="card"
+            style="background-image:url(../static/images/{{record[8]}}); background-repeat: no-repeat;background-size: cover;align-items:center;">
+            <div class="content">
+                <h2 class="title">{{record[2]}}</h2>
+                <p class="copy">{{record[3]}}</p>
+                <p class="copy"><span style=color:blue>Amount</span>{{record[4]}}</p>
+                <p class="copy"><span style=color:rgb(229,61,209)>Interest</span>{{record[5]}}</p>
+                <!-- <button class="btn">Book Now</button> -->
+                <a class="btn" style="text-decoration: none;background-color: rgb(236, 173, 173);"
+                    href="/delete/{{record[0]}}">Delete</a>
+            </div>
+        </div>
+        {% endfor%}
+    </main>
+
+
+</body>
+
+</html>
